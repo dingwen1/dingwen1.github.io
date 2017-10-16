@@ -6,12 +6,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   
-  <title>Tag: tag2 | 丁稳的博客</title>
+  <title>Tag: vscode | 丁稳的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="测试描述">
 <meta property="og:type" content="website">
 <meta property="og:title" content="丁稳的博客">
-<meta property="og:url" content="http://yoursite.com/标签/tag2/index.html">
+<meta property="og:url" content="http://yoursite.com/标签/vscode/index.html">
 <meta property="og:site_name" content="丁稳的博客">
 <meta property="og:description" content="测试描述">
 <meta property="og:locale" content="zh-CN">
@@ -91,6 +91,7 @@
         </div>
     </nav>
   </div>
+  
 </header>
 
   <div id="main-wrap" class="position-relative" style="margin-top: 55px;">
@@ -112,7 +113,7 @@
 
 <div class="container tag-cate-wrap">
     <div class="category-title-inner content has-text-centered">
-        <h1><strong style="border-top: 2px solid; border-bottom: 2px solid;">tag·tag2</strong></h1>
+        <h1><strong style="border-top: 2px solid; border-bottom: 2px solid;">tag·vscode</strong></h1>
     </div>
 
     
@@ -120,7 +121,7 @@
         <div class="box">
             <article class="media">
                 
-                <a href="/2017/10/16/hello-world/">
+                <a href="/2017/10/16/hello-world.1/">
                     
                     <div class="media-left">
                         <figure class="image is-128x128">
@@ -131,9 +132,20 @@
                     <div class="media-content">
                         <div class="content">
                             <p>
-                                <strong>Hello World</strong> <small class="post-date">at: 2017-10-16</small>
+                                <strong>Hello Vscode</strong> <small class="post-date">at: 2017-10-16</small>
                                 <br>
-                                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can a..
+                                
+初识vscode，留下点设置以及插件备用
+1、插件类
+Beautify 一款相当优秀的代码格式化工具，比自带的好用。
+
+Bracket Pair Colorize 这是一个识别括号并不同颜色的插件，让代码更容易识别。
+
+Colorize 当键入颜色代码后会出现可视化颜色。
+
+ＨＴＭＬ　ＣＳＳ　Ｓｕｐｐｏｒｔ 样式表提示，缩短样式编写时间。
+
+ＨＴＭＬ　..
                             </p>
                             <button class="button is-info">Read</button>
                         </div>
@@ -157,22 +169,49 @@
   }
 </style>
 <footer id="footer" class="has-text-centered is-flex center">
+    
   <div class="container has-padding">
     <div>
       <div>
-        <!--请您保留作者署名, 主题制作来之不易--><!-- 哈哈哈。我偏不 -->
+        <!--请您保留作者署名, 主题制作来之不易-->
+        <!-- 哈哈哈。我偏不 -->
         Blog by <a href="http://github1.github.io/">dingwen1</a>
-        <br>
-        Copyright © 丁稳 2017
-        <br>
-        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        <br> Copyright ©
+        丁稳
+          2017
+            <br>
+            <p style="font-size: 10px" id="footer-times" data-time="1/1/2017 00:00:00"></p>
+            <script>
+              var beginTime = document.getElementById("footer-times").dataset.time
+
+              function show_date_time() {
+                var span = document.getElementById("footer-times")
+                window.setTimeout("show_date_time()", 1000);
+                BirthDay = new Date(beginTime); //初始日期        
+                today = new Date();
+                timeold = (today.getTime() - BirthDay.getTime());
+                sectimeold = timeold / 1000
+                secondsold = Math.floor(sectimeold);
+                msPerDay = 24 * 60 * 60 * 1000
+                e_daysold = timeold / msPerDay
+                daysold = Math.floor(e_daysold);
+                e_hrsold = (e_daysold - daysold) * 24;
+                hrsold = Math.floor(e_hrsold);
+                e_minsold = (e_hrsold - hrsold) * 60;
+                minsold = Math.floor((e_hrsold - hrsold) * 60);
+                seconds = Math.floor((e_minsold - minsold) * 60);
+                span.innerHTML = "本站已运行" + daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+              }
+              show_date_time();
+            </script>
+            <script src="/js/search_core.js"></script>
+            <script src="/js/script.js"></script>
       </div>
     </div>
+    
   </div>
 </footer>
 
-<script src="/js/search_core.js"></script>
-<script src="/js/script.js"></script>
 
 </body>
 </html>

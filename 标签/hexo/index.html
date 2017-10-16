@@ -6,12 +6,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   
-  <title>Tag: tag1 | 丁稳的博客</title>
+  <title>Tag: hexo | 丁稳的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="测试描述">
 <meta property="og:type" content="website">
 <meta property="og:title" content="丁稳的博客">
-<meta property="og:url" content="http://yoursite.com/标签/tag1/index.html">
+<meta property="og:url" content="http://yoursite.com/标签/hexo/index.html">
 <meta property="og:site_name" content="丁稳的博客">
 <meta property="og:description" content="测试描述">
 <meta property="og:locale" content="zh-CN">
@@ -91,6 +91,7 @@
         </div>
     </nav>
   </div>
+  
 </header>
 
   <div id="main-wrap" class="position-relative" style="margin-top: 55px;">
@@ -112,7 +113,7 @@
 
 <div class="container tag-cate-wrap">
     <div class="category-title-inner content has-text-centered">
-        <h1><strong style="border-top: 2px solid; border-bottom: 2px solid;">tag·tag1</strong></h1>
+        <h1><strong style="border-top: 2px solid; border-bottom: 2px solid;">tag·hexo</strong></h1>
     </div>
 
     
@@ -120,20 +121,22 @@
         <div class="box">
             <article class="media">
                 
-                <a href="/2017/10/16/hello-world/">
+                <a href="/2017/04/16/hexo从零开始到搭建完整/">
                     
                     <div class="media-left">
                         <figure class="image is-128x128">
-                            <img src="https://raw.githubusercontent.com/dingwen1/electronicResume/master/img/1.jpg" style="height: 100%; width: 100%">
+                            <img src="http://opif0c56u.bkt.clouddn.com/look-me.png?imageView/2/w/600/q/90" style="height: 100%; width: 100%">
                         </figure>
                     </div>
                     
                     <div class="media-content">
                         <div class="content">
                             <p>
-                                <strong>Hello World</strong> <small class="post-date">at: 2017-10-16</small>
+                                <strong>hexo从零开始到搭建完整</strong> <small class="post-date">at: 2017-04-16</small>
                                 <br>
-                                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can a..
+                                )look me
+前言其实平时自己写的文章并不多，偶尔看到一些东西会做点笔记，但是每次写的东西都会到处放，不好找，所以才想着自己搭建一个人博客网站，现在大家用hexo比较多，也比较方便，并且能使用的主题也很多，所以小花就用她啦~
+本篇为从零开始的基础篇，其他SEO、评论系统、统计等请看Hexo博客添加SEO-评论系统-阅读统计-站长统计，本篇所包含的内容..
                             </p>
                             <button class="button is-info">Read</button>
                         </div>
@@ -157,22 +160,49 @@
   }
 </style>
 <footer id="footer" class="has-text-centered is-flex center">
+    
   <div class="container has-padding">
     <div>
       <div>
-        <!--请您保留作者署名, 主题制作来之不易--><!-- 哈哈哈。我偏不 -->
+        <!--请您保留作者署名, 主题制作来之不易-->
+        <!-- 哈哈哈。我偏不 -->
         Blog by <a href="http://github1.github.io/">dingwen1</a>
-        <br>
-        Copyright © 丁稳 2017
-        <br>
-        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        <br> Copyright ©
+        丁稳
+          2017
+            <br>
+            <p style="font-size: 10px" id="footer-times" data-time="1/1/2017 00:00:00"></p>
+            <script>
+              var beginTime = document.getElementById("footer-times").dataset.time
+
+              function show_date_time() {
+                var span = document.getElementById("footer-times")
+                window.setTimeout("show_date_time()", 1000);
+                BirthDay = new Date(beginTime); //初始日期        
+                today = new Date();
+                timeold = (today.getTime() - BirthDay.getTime());
+                sectimeold = timeold / 1000
+                secondsold = Math.floor(sectimeold);
+                msPerDay = 24 * 60 * 60 * 1000
+                e_daysold = timeold / msPerDay
+                daysold = Math.floor(e_daysold);
+                e_hrsold = (e_daysold - daysold) * 24;
+                hrsold = Math.floor(e_hrsold);
+                e_minsold = (e_hrsold - hrsold) * 60;
+                minsold = Math.floor((e_hrsold - hrsold) * 60);
+                seconds = Math.floor((e_minsold - minsold) * 60);
+                span.innerHTML = "本站已运行" + daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+              }
+              show_date_time();
+            </script>
+            <script src="/js/search_core.js"></script>
+            <script src="/js/script.js"></script>
       </div>
     </div>
+    
   </div>
 </footer>
 
-<script src="/js/search_core.js"></script>
-<script src="/js/script.js"></script>
 
 </body>
 </html>

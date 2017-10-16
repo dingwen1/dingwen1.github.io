@@ -1,5 +1,8 @@
-(function($){
+
   // Search
+  setTimeout(function() {
+    
+ 
   var $searchWrap = $('#search-form-wrap'),
     isSearchAnim = false,
     searchAnimDuration = 200;
@@ -239,4 +242,4 @@
             navbar.classList.toggle('overflow-hidden')
         }
     }())
-})(jQuery);
+  }, 900);

@@ -9,6 +9,7 @@
   <title>Hello World | 丁稳的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="keywords" content="tag1,tag2">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
 <meta property="og:url" content="http://yoursite.com/2017/10/16/hello-world/index.html">
@@ -16,7 +17,7 @@
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/dingwen1/electronicResume/master/img/1.jpg">
-<meta property="og:updated_time" content="2017-10-15T13:03:03.000Z">
+<meta property="og:updated_time" content="2017-10-16T01:51:05.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello World">
 <meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
@@ -25,7 +26,7 @@
     <link rel="alternate" href="/atom.xml" title="丁稳的博客" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="https://raw.githubusercontent.com/dingwen1/electronicResume/master/img/avatar.jpg">
   
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
@@ -49,7 +50,7 @@
         <div class="nav-center is-hidden position-relative" id="search_container">
             <div class="nav-item full-width full-height">
                 <i class="fa fa-search has-padding" aria-hidden="true"></i>
-                <input type="text" id="search_input" class="search-input full-height full-width" placeholder="Search post" autofocus>
+                <input type="text" id="search_input" class="search-input full-height full-width" placeholder="搜索文章" autofocus>
                 <i id="close_search" class="fa fa-times" aria-hidden="true"></i>
             </div>
             <div id="search_result"></div>
@@ -60,15 +61,15 @@
             </a>
             
             <a class="nav-item" href="/">
-                Home
+                主页
             </a>
             
             <a class="nav-item" href="/works">
-                My Works
+                介绍
             </a>
             
             <a class="nav-item" href="/about">
-                About
+                关于
             </a>
             
         </div>
@@ -80,15 +81,15 @@
         <div class="navbar-menu position-absolute full-width content-box is-hidden-desktop is-flex flex-column center" style="top: 100%;">
             
             <a class="nav-item flex-1" href="/">
-                Home
+                主页
             </a>
             
             <a class="nav-item flex-1" href="/works">
-                My Works
+                介绍
             </a>
             
             <a class="nav-item flex-1" href="/about">
-                About
+                关于
             </a>
             
         </div>
@@ -142,12 +143,16 @@
             </h1>
             
             <div class="is-flex align-center">
-                <img class="post-avatar" src="https://cdn2.iconfinder.com/data/icons/rcons-user/32/male-shadow-circle-512.png">
+                <img class="post-avatar" src="https://raw.githubusercontent.com/dingwen1/electronicResume/master/img/avatar.jpg">
                 <span style="padding:0 10px;"> <span class="sub-title">By</span> 丁稳</span>
                 <span class="post-date sub-title">at: 2017-10-16</span>
             </div>
             
                 <div>
+                    
+                         <a class="tag is-post-tag" href="/标签/tag1/">tag1</a>
+                    
+                         <a class="tag is-post-tag" href="/标签/tag2/">tag2</a>
                     
                 </div>
             
@@ -166,27 +171,25 @@
         </div>
         <div class="post-reply">
             
-            
-            <div id="disqus_thread" style="width: 80%; margin: 0 auto;"></div>
-                <script>
+                <!-- 来必力City版安装代码 -->
+                <div id="lv-container" data-id="city" data-uid="MTAyMC8zMTM3Ny83OTQw">
+                    <script type="text/javascript">
+                        (function(d, s) {
+                            var j, e = d.getElementsByTagName(s)[0];
 
-                    /**
-                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-                    /*
-                     var disqus_config = function () {
-                     this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                     };
-                     */
-                    (function() { // DON'T EDIT BELOW THIS LINE
-                        var d = document, s = d.createElement('script');
-                        s.src = 'https://haojen.disqus.com/embed.js';
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                    })();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            if (typeof LivereTower === 'function') { return; }
+
+                            j = d.createElement(s);
+                            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                            j.async = true;
+
+                            e.parentNode.insertBefore(j, e);
+                        })(document, 'script');
+                    </script>
+                    <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+                </div>
+                <!-- City版安装代码已完成 -->
+            
             
         </div>
     </div>
@@ -217,8 +220,8 @@
   <div class="container has-padding">
     <div>
       <div>
-        <!--请您保留作者署名, 主题制作来之不易-->
-        Theme by <a href="http://haojen.github.io/">Haojen Ma</a>
+        <!--请您保留作者署名, 主题制作来之不易--><!-- 哈哈哈。我偏不 -->
+        Blog by <a href="http://github1.github.io/">dingwen1</a>
         <br>
         Copyright © 丁稳 2017
         <br>

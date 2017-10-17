@@ -605,7 +605,7 @@
       <title><![CDATA[Vue学习的思维导图]]></title>
       <url>/2017/02/11/Vue%E5%AD%A6%E4%B9%A0%E4%B9%8B%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/</url>
       <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/dingwen1/electronicResume/master/img/V.png" alt="post-cover"><!-- 引入博文封面图的方法 --></p>
-<p></p><h3 style="color:#369;text-align:center">一顿瞎学</h3><br><img src="https://raw.githubusercontent.com/dingwen1/electronicResume/master/img/V.png" style="width:95%;box-shadow:0px 0px 10px #000;margin:0 auto;display:block"><p></p>
+<p></p><h3 style="color:#369;text-align:center">一顿瞎学</h3><br><a href="https://raw.githubusercontent.com/dingwen1/electronicResume/master/img/V.png" target="_blank"><br><img src="https://raw.githubusercontent.com/dingwen1/electronicResume/master/img/V.png" style="width:95%;box-shadow:0px 0px 10px #000;margin:0 auto;display:block"></a><p></p>
 ]]></content>
       
         <categories>
@@ -629,14 +629,14 @@
   
     
     <entry>
-      <title><![CDATA[about]]></title>
-      <url>/about/index.html</url>
+      <title><![CDATA[My Works]]></title>
+      <url>/works/index.html</url>
       <content type="html"></content>
     </entry>
     
     <entry>
-      <title><![CDATA[My Works]]></title>
-      <url>/works/index.html</url>
+      <title><![CDATA[about]]></title>
+      <url>/about/index.html</url>
       <content type="html"></content>
     </entry>
     

@@ -6,12 +6,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   
-  <title>Tag: 前端 | 丁稳的博客</title>
+  <title>归档: 2017/2 | 丁稳的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="测试描述">
 <meta property="og:type" content="website">
 <meta property="og:title" content="丁稳的博客">
-<meta property="og:url" content="http://yoursite.com/标签/前端/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/2017/02/index.html">
 <meta property="og:site_name" content="丁稳的博客">
 <meta property="og:description" content="测试描述">
 <meta property="og:locale" content="zh-CN">
@@ -97,83 +97,106 @@
   <div id="main-wrap" class="position-relative" style="margin-top: 55px;">
       <div class="main-inner-content">
           <style>
-    .container.tag-cate-wrap {
-        min-height: 93vh;
+    .post-hover:hover {
+        box-shadow: inset 0 0 100px #000;
+        transition: box-shadow .2s;
     }
 
-    .category-title-inner {
-        padding-top: 50px;
+    .sub-post-container .post-hover:hover h3 {
+        text-decoration: underline gray;
     }
 
-    strong {
-        text-transform: capitalize;
+
+    .primary-item-main {
+        height: 330px;
+        background-size: cover;
     }
+
+    .primary-container .title,
+    .primary-container .sub-title,
+    .primary-container .post-content-text,
+    .primary-container .date {
+        color: #fff;
+    }
+
+    .post-content-text {
+        color: #f1f1f1!important;
+    }
+
+    .primary-container .post-hover {
+        background: black;
+    }
+
+    .content-bg-mask {
+        background: rgba(0,0,0,.4);
+    }
+
 </style>
 
-
-<div class="container tag-cate-wrap">
-    <div class="category-title-inner content has-text-centered">
-        <h1><strong style="border-top: 2px solid; border-bottom: 2px solid;">tag·前端</strong></h1>
-    </div>
-
-    
-    
-        <div class="box">
-            <article class="media">
+<div style="background: #f5f8f9;">
+    <div id="main-container" class="container" style="padding-top: 20px;">
+        <div class="is-flex main-content justify-center">
+            <section class="column is-9">
                 
-                <a href="/2017/03/15/前端跨域请求原理及实践/">
-                    
-                    <div class="media-left">
-                        <figure class="image is-128x128">
-                            <img src="https://raw.githubusercontent.com/dingwen1/electronicResume/master/img/1.jpg" style="height: 100%; width: 100%">
-                        </figure>
-                    </div>
-                    
-                    <div class="media-content">
-                        <div class="content">
-                            <p>
-                                <strong>前端跨域请求原理及实践</strong> <small class="post-date">at: 2017-03-15</small>
-                                <br>
-                                
-一、 跨域请求的含义
-浏览器的同源策略，出于防范跨站脚本的攻击，禁止客户端脚本（如 JavaScript）对不同域的服务进行跨站调用。
-一般的，只要网站的 协议名protocol、 主机host、 端口号port 这三个中的任意一个不同，网站间的数据请求与传输便构成了跨域调用。这也是我们下面实践的理论基础。我们利用 NodeJs 创建了两个服务器，分别..
-                            </p>
-                            <button class="button is-info">Read</button>
+<div class="primary-container content-box is-flex-desktop clear-padding bottom-line" style="margin-bottom: 25px;">
+    <div class="column  is-12">
+        <a href="/2017/02/11/Vue学习之思维导图/">
+            <div class="full-height post-hover"
+                 style="
+                         background-image: url('https://raw.githubusercontent.com/dingwen1/electronicResume/master/img/V.png');
+                         height: 350px;
+                         background-size: cover;
+                         background-repeat: no-repeat;
+                         ">
+                    <div class=" is-flex flex-column center content has-text-centered full-height has-padding content-bg-mask">
+                        <h1 class="title text-shadow" style="margin-bottom: 15px;">
+                            Vue学习的思维导图
+                        </h1>
+                        <div>
+                        
+                            `
+                                <span class="tag is-post-tag">前端</span>
+                            `
+                                <span class="tag is-post-tag">Vue</span>
+                            
+                        
                         </div>
-                    </div>
-                </a>
-            </article>
-        </div>
-    
-        <div class="box">
-            <article class="media">
-                
-                <a href="/2017/02/11/Vue学习之思维导图/">
-                    
-                    <div class="media-left">
-                        <figure class="image is-128x128">
-                            <img src="https://raw.githubusercontent.com/dingwen1/electronicResume/master/img/V.png" style="height: 100%; width: 100%">
-                        </figure>
-                    </div>
-                    
-                    <div class="media-content">
-                        <div class="content">
-                            <p>
-                                <strong>Vue学习的思维导图</strong> <small class="post-date">at: 2017-02-11</small>
-                                <br>
-                                
+                        <p class="post-content-text is-marginless has-padding text-shadow">
+                            
 一顿瞎学
 
-                            </p>
-                            <button class="button is-info">Read</button>
-                        </div>
+                        </p>
+                        <p class="date text-shadow">2017-02-11</p>
+                        <button class="button is-info is-small">Read More</button>
                     </div>
-                </a>
-            </article>
+            </div>
+        </a>
+    </div>
+    <div class="column is-5 is-hidden-touch" style="padding-left: 0;">
+        <div class="full-height is-flex flex-column justify-space-between" style="min-height: 350px;">
+            
+            
         </div>
-    
+    </div>
+    <div class="column is-12 is-hidden-desktop">
+        
+        
+    </div>
 </div>
+
+                    
+                    
+                
+                <!--翻頁-->
+                <nav class="pagination is-flex" style="justify-content: flex-end">
+                    
+                </nav>
+            </section>
+            
+        </div>
+    </div>
+</div>
+
       </div>
   </div>
   <style>

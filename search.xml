@@ -4,7 +4,7 @@
     
     <entry>
       <title><![CDATA[你好！我是丁稳]]></title>
-      <url>/2017/10/17/hello-world/</url>
+      <url>/2017/10/19/hello-world/</url>
       <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/dingwen1/electronicResume/master/img/avatar.jpg" alt="post-cover"></p>
 <h2 id="——丁稳"><a href="#——丁稳" class="headerlink" title="——丁稳"></a>——丁稳</h2><ul>
 <li><h4 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h4><ul>
@@ -108,6 +108,34 @@
             
         </categories>
         
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[WebApp移动端学习]]></title>
+      <url>/2017/04/22/webApp/</url>
+      <content type="html"><![CDATA[ <div style="max-width:850px;padding:20px;border:1px solid #999;border-top:transparent;box-shadow:0px 5px 10px #369;margin:0 auto;"><br><section><br><br>        <strong><h1 style="color: rgb(38, 38, 38);">第一个HybridApp</h1></strong><br></section><br>    <span style="font-size: 16px;"><strong>Android工程的目录结构：</strong></span><br><br>1.  <span style="font-size: 16px;">src：存储的是java文件</span><br><br>2.  <span style="font-size: 16px;">assets：资源文件，比如要混编用到的HTML/CSS/JS</span><br><br>3.  <span style="font-size: 16px;">res/layout：布局文件activity_main.xml</span><br><br>4.  <span style="font-size: 16px;">AndroidMainfest.xml文件中，包含版本号、权限的设置、图标的设置···</span><br><br>    <span style="font-size: 16px;"><strong>基本步骤：</strong></span><br><br>1.  <span style="font-size: 16px;">编写前端代码，完成指定的功能，保证测试是没有问题的。</span><br><br>2.  <span style="font-size: 16px;">创建一个Android项目。</span><br><br>3.  <span style="font-size: 16px;">将前端代码拷贝到Android工程的assets目录。</span><br><br>4.  <span style="font-size: 16px;">调用原生组件（WebView）来加载前端代码。</span><br><table width="100%"><br>    <tbody><br>        <tr class="firstRow"><br>            <td valign="top" width="483" style=" border-color: rgb(227, 108, 9);"><br>                &nbsp; &nbsp;&nbsp;<span></span><span>// 创建一个原生组件WebView</span><br><br>                    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span style="color: rgb(227, 108, 9);">WebView wv = new WebView(getApplicationContext());</span><br><br>                    &nbsp; &nbsp; &nbsp; &nbsp; // 让wv来加载assets目录夏的demo01.html<br><br>                    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span style="color: rgb(227, 108, 9);">wv.loadUrl(&quot;<a href="http://file///android_asset/demo01.html%22" target="_blank" rel="external">file:///android_asset/demo01.html&quot;);</a>;)</span><br><br>                    &nbsp; &nbsp; &nbsp; &nbsp; // 设置wv允许执行js<br><br>                    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span style="color: rgb(227, 108, 9);">wv.getSettings().setJavaScriptEnabled(true);</span><br><br>                    &nbsp; &nbsp; &nbsp; &nbsp; // 查看JS通过从console.log所输出的日志信息<br><br>                    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span style="color: rgb(227, 108, 9);">wv.setWebChromeClient(new WebChromeClient(){</span><br><br>                    <span style="color: rgb(227, 108, 9);">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span style="white-space: pre;"></span>@Override</span><br><br>                    <span style="color: rgb(227, 108, 9);">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span style="white-space: pre;"></span>public boolean onConsoleMessage(ConsoleMessage cons oleMessage) {</span><br><br>                    <span style="color: rgb(227, 108, 9);">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span style="white-space: pre;"></span>// TODO Auto-generated method stub</span><br><br>                    <span style="color: rgb(227, 108, 9);">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span style="white-space: pre;"></span>return super.onConsoleMessage(consoleMessage);</span><br><br>                    <span style="color: rgb(227, 108, 9);">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span style="white-space: pre;"></span>}</span><br><br>                    <span style="color: rgb(227, 108, 9);">&nbsp; &nbsp; &nbsp; &nbsp; });</span><br><br>                    <span style="color: rgb(227, 108, 9);"></span><br><br>                    &nbsp; &nbsp; &nbsp; &nbsp; // 让wv作为当前页面要显示的内容视图<br><br>                    &nbsp; &nbsp;&nbsp;<span style="white-space: pre;"></span><span style="color: rgb(227, 108, 9);">setContentView(wv);</span><br><br>            </td><br>        </tr><br>    </tbody><br></table><br><br><section><br>    <section><br><h1 style="color: rgb(38, 38, 38);">Ionic</h1></section><section><section> <section><section><br>                    what? 用来构建移动端应用程序的开元框架<br>                    when? 用在任何一个需要实现移动端效果的应用程序<br>                    why? ①成本低，可以使用前端技术来轻松编写出扩平台运行的应用程序；②Ionic基于Angular，Cordova来实现的；③支持ES6、ts；④强大的命令行工具的支持。<br>                    how? ··· ···<br>            </section><br>        </section><br>    </section><br></section><br><section><br>    <span style="font-size: 16px;"><strong>搭建开发环境：</strong></span><br><span style="font-size: 16px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;①通过npm去安装Ionic<br></span><br><span style="font-size: 16px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;npm install -g cordova ionic<br></span><br><span style="font-size: 16px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;②通过Ionic指令去创建官网所提供的模板项目</span><br><span style="font-size: 16px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ionic start myApp blank/tabs/sidemenu<br></span><br><span style="font-size: 16px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;③运行项目</span><br><pre style="font-size: 12px; border-width: 1px 1px 1px 4px; border-style: solid; border-color: rgb(221, 221, 221); border-image: initial; margin: 15px auto; padding: 10px 15px; font-stretch: normal; line-height: 20px; font-family: Menlo, Monaco, Consolas, &quot;Andale Mono&quot;, &quot;lucida console&quot;, &quot;Courier New&quot;, monospace; word-break: break-all; background-image: url(&quot;/images/codecolorer_bg.gif&quot;); background-position: center top; background-color: rgb(251, 251, 251); color: rgb(51, 51, 51);">$ cd myApp     <br>$ ionic platform add android    //创建Android应用     <br>$ ionic build android    <br>$ ionic emulate android</pre><br><pre style="font-size: 12px; border-width: 1px 1px 1px 4px; border-style: solid; border-color: rgb(221, 221, 221); border-image: initial; margin: 15px auto; padding: 10px 15px; font-stretch: normal; line-height: 20px; font-family: Menlo, Monaco, Consolas, &quot;Andale Mono&quot;, &quot;lucida console&quot;, &quot;Courier New&quot;, monospace; word-break: break-all; background-image: url(&quot;/images/codecolorer_bg.gif&quot;); background-position: center top; background-color: rgb(251, 251, 251); color: rgb(51, 51, 51);">$ cd myApp        <br>$ ionic platform add ios     //创建iOS应用        <br>$ ionic build ios        <br>$ ionic emulate ios</pre><br><span style="font-size: 16px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ionic serve //在8100端口启动该APP<br></span><br><span style="font-size: 16px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;或者 ionic serve -l<br></span><br><span style="font-size: 16px;"><strong>创建新页面：</strong></span><br><pre style="font-size: 12px; margin: 15px auto; padding: 10px 15px; background-image: url(&quot;/images/codecolorer_bg.gif&quot;); background-position: center top; background-color: rgb(251, 251, 251); border-width: 1px 1px 1px 4px; border-style: solid; border-color: rgb(221, 221, 221); border-image: initial; font-stretch: normal; line-height: 20px; font-family: Menlo, Monaco, Consolas, &quot;Andale Mono&quot;, &quot;lucida console&quot;, &quot;Courier New&quot;, monospace; word-break: break-all; color: rgb(51, 51, 51);">$ ionic g page myPage   //在项目pages目录创建出新页面</pre><br><br><em>   <span style="font-size: 16px;">创建出一个文件夹</span>
+
+</em>   <span style="font-size: 16px;">文件夹中有 .ts文件，（页面，可定义数据）</span><br><br>    <span style="font-size: 16px;"><strong>使用page页面：</strong></span><br><br>1.  <span style="font-size: 16px;">将page页面导出的类，在app.module.ts中进行声明；</span><br><br>    <span style="font-size: 16px;">&nbsp;&nbsp;&nbsp;&nbsp;2.剩下的省略··· ···<strong>
+</strong></span><br><br>    <span style="font-size: 16px;"><strong>使用自带的组件：</strong></span><br><br>    <span style="font-size: 16px;">&nbsp;&nbsp;&nbsp;&nbsp;1.引入</span><br><br>    <span style="font-size: 16px;"><span style="font-size: 16px; color: rgb(255, 117, 181);">import</span>&nbsp;{ AlertController }&nbsp;<span style="font-size: 16px; color: rgb(255, 117, 181);">from</span>&nbsp;<span style="font-size: 16px; color: rgb(25, 249, 216);">&#39;ionic-angular&#39;</span>;</span><br><br>    <span style="font-size: 16px;">&nbsp;&nbsp;&nbsp;&nbsp;2.在构造函数内实例化类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br><br>    <span style="font-size: 16px;"><span style="font-size: 16px; color: rgb(255, 184, 108);">constructor</span>(</span><br><br>    <span style="font-size: 16px;"><span style="font-size: 16px; color: rgb(255, 184, 108);">&nbsp;&nbsp;&nbsp;&nbsp;public</span>&nbsp;<span style="font-size: 16px; color: rgb(187, 187, 187);">navCtrl</span>: NavController,</span><br><br>    <span style="font-size: 16px;"><span style="font-size: 16px; color: rgb(255, 184, 108);">&nbsp;&nbsp;&nbsp;&nbsp;public</span>&nbsp;<span style="font-size: 16px; color: rgb(187, 187, 187);">navParams</span>: NavParams,</span><br><br>    <span style="font-size: 16px;"><span style="font-size: 16px; color: rgb(255, 184, 108);">&nbsp;&nbsp;&nbsp;&nbsp;public</span>&nbsp;<span style="font-size: 16px; color: rgb(187, 187, 187);">alertCtrl</span>: AlertController) {</span><br><br>    <span style="font-size: 16px;">}</span><br><br>    <span style="font-size: 16px;">&nbsp;&nbsp;&nbsp;&nbsp;3.使用&nbsp;&nbsp;&nbsp;&nbsp;</span><br><br>    <span style="font-size: 16px;"><span style="font-size: 16px; color: rgb(255, 184, 108);">let</span>&nbsp;myAlert =&nbsp;<span style="font-size: 16px; color: rgb(255, 154, 193);">this</span>.<span style="font-size: 16px; color: rgb(255, 154, 193);">alertCtrl</span>.<span style="font-size: 16px; color: rgb(111, 193, 255);">create</span>({</span><br><br>    <span style="font-size: 16px;">&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;<span style="font-size: 16px; color: rgb(25, 249, 216);">&#39;搞事？&#39;</span>,</span><br><br>    <span style="font-size: 16px;">&nbsp;&nbsp;&nbsp;&nbsp;message:<span style="font-size: 16px; color: rgb(25, 249, 216);">&#39;嗯昂是要搞事？&#39;</span>,</span><br><br>    <span style="font-size: 16px;">&nbsp;&nbsp;&nbsp;&nbsp;buttons: [<span style="font-size: 16px; color: rgb(25, 249, 216);">&#39;是啊&#39;</span>,&nbsp;<span style="font-size: 16px; color: rgb(25, 249, 216);">&#39;我怂&#39;</span>]</span><br><br>    <span style="font-size: 16px;">});</span><br><br>    <span style="font-size: 16px;"><span style="font-size: 16px; color: rgb(255, 154, 193);">myAlert</span>.<span style="font-size: 16px; color: rgb(111, 193, 255);">present</span>();</span><br><br>    <span style="font-size: 16px;"><strong>
+</strong></span><br><br>    <span style="font-size: 16px;"><strong>常见错误：</strong></span><br><br><em>   <span style="font-size: 16px;">忘记声明：<strong>
+</strong></span><br><br>            <span style="font-size: 16px;">Uncaught (in promise): Error: No component factory found for Demo01BasicPage. Did you add it to @NgModule.entryComponents?&nbsp; app.module.ts中引入页面类，在entryComponents和declarations声明。</span>
+
+</em>   <span style="font-size: 16px;">是一个警告，提示引入了一个类，但是没有使用</span><br><br>            <span style="font-size: 14px;">tslint: …:/xampp/htdocs/Framework_codes/webApp/template/template/src/app/app.component.ts, line: 9<br></span><br><br>            <span style="font-size: 16px;">Unused import: &#39;Demo02AlertPage</span><br><br><section><br><br>        <img src="http://newcdn.96weixin.com/c/mmbiz.qlogo.cn/mmbiz/p6Vlqvia1Uicxmfb50jCNmujr5O9ZSnqHurPuAvF5ibfZe5Y5rP9eYQ1vKxC8Ar20AcQs4Mw1UrBOVwS9AGu7aZBw/0?wx_fmt=png" alt=""><br><br></section><br></section></section></div>
+]]></content>
+      
+        <categories>
+            
+            <category> 学习 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+        </tags>
         
     </entry>
     
@@ -626,19 +654,5 @@
     </entry>
     
   
-  
-    
-    <entry>
-      <title><![CDATA[My Works]]></title>
-      <url>/works/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[about]]></title>
-      <url>/about/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
   
 </search>
